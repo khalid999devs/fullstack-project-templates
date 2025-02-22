@@ -1,8 +1,12 @@
+import AddToBasketButton from '@/components/AddToBasketButton';
 import { imageUrl } from '@/lib/imageUrl';
 import { getProductBySlug } from '@/sanity/lib/products/getProductBySlug';
 import { PortableText } from 'next-sanity';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+
+export const dynamic = 'force-static';
+export const revalidate = 3600; //revalidate at every 60 seconds
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
@@ -44,6 +48,10 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
                 <PortableText value={product.description} />
               )}
             </div>
+          </div>
+
+          <div className='mt-6'>
+            <AddToBasketButton product={product} disabled={isOutOfStock} />
           </div>
         </div>
       </div>

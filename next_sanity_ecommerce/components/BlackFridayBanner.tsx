@@ -2,8 +2,6 @@ import { COUPON_CODES } from '@/sanity/lib/sales/couponCodes';
 import { getActiveSalesByCouponCode } from '@/sanity/lib/sales/getActiveSalesByCouponCode';
 import React from 'react';
 
-type Props = {};
-
 const BlackFridayBanner = async () => {
   const sale = await getActiveSalesByCouponCode(COUPON_CODES.BFRIDAY);
 

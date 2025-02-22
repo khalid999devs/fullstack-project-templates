@@ -1,9 +1,10 @@
 import BlackFridayBanner from '@/components/BlackFridayBanner';
 import ProductsView from '@/components/ProductsView';
-import { Button } from '@/components/ui/button';
 import { getAllCategories } from '@/sanity/lib/products/getAllCategories';
 import { getAllProducts } from '@/sanity/lib/products/getAllproducts';
-import Image from 'next/image';
+
+export const dynamic = 'force-static';
+export const revalidate = 3600; //revalidate at every 60 seconds
 
 export default async function Home() {
   const products = await getAllProducts();
