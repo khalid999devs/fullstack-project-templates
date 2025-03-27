@@ -7,7 +7,7 @@ Retors is a modern ecommerce web application inspired by Temu, built using the l
 - **Next.js 15** for a fast and scalable frontend.
 - **Sanity.io** as the headless CMS for managing product data and content.
 - **Stripe** for secure payment processing, including a custom webhook for handling transactions.
-- **Coupon Code Management** to provide discounts and promotional offers to users.
+- **Promo Code Management** to provide discounts and promotional offers to users.
 
 The combination of these tools ensures a robust, feature-rich, and user-friendly ecommerce platform.
 
@@ -20,7 +20,7 @@ The combination of these tools ensures a robust, feature-rich, and user-friendly
 - **Dynamic Product Management**: Easily manage products and categories via Sanity CMS.
 - **Secure Payments**: Integrated with Stripe for handling payments and refunds.
 - **Custom Webhooks**: Real-time order processing and payment status updates.
-- **Coupon Code System**: Create and manage discount codes for promotional campaigns.
+- **Promo Code System**: Create and manage discount codes for promotional campaigns.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Fast Performance**: Built with Next.js 15 for server-side rendering and static site generation.
 - **SEO Optimized**: Enhanced visibility on search engines.
